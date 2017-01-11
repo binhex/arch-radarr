@@ -15,6 +15,7 @@ Latest stable Radarr release from Arch Linux AUR.
 docker run -d \
     -p 7878:7878 \
     --name=<container name> \
+    -v <path for media files>:/media \
     -v <path for data files>:/data \
     -v <path for config files>:/config \
     -v /etc/localtime:/etc/localtime:ro \
@@ -34,6 +35,7 @@ Please replace all user variables in the above command defined by <> with the co
 docker run -d \
     -p 7878:7878 \
     --name=radarr \
+    -v /media/movies:/media \
     -v /apps/docker/sabnzbd/watched:/data \
     -v /apps/docker/radarr:/config \
     -v /etc/localtime:/etc/localtime:ro \
