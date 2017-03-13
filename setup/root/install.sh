@@ -50,8 +50,8 @@ source /root/aur.sh
 # create file with contets of here doc
 cat <<'EOF' > /tmp/permissions_heredoc
 # set permissions inside container
-chown -R "${PUID}":"${PGID}" /usr/lib/radarr /usr/bin/radarr /home/nobody
-chmod -R 775  /usr/lib/radarr /usr/bin/radarr /home/nobody
+chown -R "${PUID}":"${PGID}" /usr/lib/radarr /home/nobody
+chmod -R 775  /usr/lib/radarr /home/nobody
 
 EOF
 
