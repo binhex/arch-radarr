@@ -35,7 +35,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="git libmediainfo sqlite"
+pacman_packages=""
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
