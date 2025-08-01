@@ -51,7 +51,7 @@ fi
 ####
 
 # define aur packages
-aur_packages="radarr"
+aur_packages="radarr-bin"
 
 # call aur install script (arch user repo)
 source aur.sh
